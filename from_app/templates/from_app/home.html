@@ -1,0 +1,19 @@
+ {% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+</head>
+<body>
+  <div class="centered-content">
+    <img class="logo"src="{%static 'images/logo.JPG'%}" alt="">
+    <form action="{% url 'contact' %}" method="get">
+      <button type="submit" class="btn">Click to Enter From </button>
+    </form>
+
+  </div>
+</body>
+</html>
